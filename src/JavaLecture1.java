@@ -7,7 +7,7 @@ public class JavaLecture1 {
 		 * multi line comment
 		 * <- these stars are not necessary
 		 * */
-		
+
 		//Java Naming Convention
 		//Class names should begin with a capital letter
 		//Constants, should be all capital --> PI
@@ -18,7 +18,7 @@ public class JavaLecture1 {
 		//example variable--> firstName
 		//example class --> MyFirstClass
 		//example constant --> SALESTAX
-		
+
 		/* 8 Primitive Types 
 		 * 4 integer types are: byte, short, int, long
 		 */
@@ -29,43 +29,69 @@ public class JavaLecture1 {
 		byte myByte2; //this is declared, but not initialized
 		myByte2 = myByte; //it was not initialized
 		myByte2 = 120; //it is now reassigned
-		
+
 		/* 2 decimal types of primitives: float and double */
 		float myFloat = 1.0f; 
 		double myDouble = 2.3; //more accurate, precise
-		
+
 		/* non-numerical primitives */
 		// boolean takes one of two values, either true or false
 		boolean myBoolean = true;
 		boolean myBoolean2 = false;
-		
+
 		//char is EXACTLY one character
 		char myChar = 'a';
-		
+
 		//print what we have
 		System.out.println("This prints on one line then goes to the next");
 		//System.out.print("This prints on one line then stays there");
 		//System.out.print("...See what I mean?");
 		System.out.println("My character is: " + myChar);
 		System.out.println("My int is: " + myInt);
-		
+
 		// Strings --> sequence of characters (or they can also be a single character)
 		String myString = "Yuta";
 		//				   0123
 		System.out.println("My String is: " + myString);
-		
+
 		String myString2 = "Another String";
 		// 					0123456789....
 		System.out.println(myString + myString2);
 		System.out.println("My String is: " + myString);
 		System.out.println("This was my first string: myString" + " and this was my second: " + myString2);
-		
+
 		int x = 10;
 		int y = 11;
 		System.out.println("The sum of x and y is: " + (x + y));
 		System.out.println(myString.charAt(2)); //call the charAt method on the String myString
 		System.out.println(myString.substring(1));//call the substring method on myString --> get the second character on...
 		System.out.println("My String is: " + myString);
+
+		//Escape characters
+		System.out.println("Printing special characters \' \" or \\");
+		System.out.println("This is one line\nThis is the next");
+		System.out.println("This is one line\rThis is the next");
+		System.out.println("\tThis line is tabbed in!");
 		
+		//Constants
+		final double TAXRATE = 6.25;
+		//TAXRATE = 10; //Cannot reassign a constant
+		System.out.println("pi = " + Math.PI);
+		
+		//Arrays
+		int [] intsA = {1,2};
+		int [] intsB = new int[2];
+		String [] myStrings = {"Yuta", "Me"};
+		
+		System.out.println(intsB[0]);
+		System.out.println(intsB[1]);
+		System.out.println(intsA[0]);
+		System.out.println(intsA[1]);
+		
+		intsB[0] = 1;
+		intsB[1] = 2;
+		System.out.println(intsB[0]);
+		System.out.println(intsB[1]);
+		System.out.println(myStrings[0] + " and " + myStrings[1]);
 	}//end of the method
 }//end of the JavaLecture1 class
