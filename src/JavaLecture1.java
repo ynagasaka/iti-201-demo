@@ -41,7 +41,31 @@ public class JavaLecture1 {
 		
 		//char is EXACTLY one character
 		char myChar = 'a';
-		char myChar2 = "a";
+		
+		//print what we have
+		System.out.println("This prints on one line then goes to the next");
+		//System.out.print("This prints on one line then stays there");
+		//System.out.print("...See what I mean?");
+		System.out.println("My character is: " + myChar);
+		System.out.println("My int is: " + myInt);
+		
+		// Strings --> sequence of characters (or they can also be a single character)
+		String myString = "Yuta";
+		//				   0123
+		System.out.println("My String is: " + myString);
+		
+		String myString2 = "Another String";
+		// 					0123456789....
+		System.out.println(myString + myString2);
+		System.out.println("My String is: " + myString);
+		System.out.println("This was my first string: myString" + " and this was my second: " + myString2);
+		
+		int x = 10;
+		int y = 11;
+		System.out.println("The sum of x and y is: " + (x + y));
+		System.out.println(myString.charAt(2)); //call the charAt method on the String myString
+		System.out.println(myString.substring(1));//call the substring method on myString --> get the second character on...
+		System.out.println("My String is: " + myString);
 		
 	}//end of the method
 }//end of the JavaLecture1 class
