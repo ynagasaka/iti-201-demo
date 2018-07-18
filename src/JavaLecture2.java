@@ -43,5 +43,61 @@ public class JavaLecture2 {
 			result += i;
 			System.out.println("Our result is: " + result + " and our count is: " + i);
 		}//end of for loop
+		int x,y,z; //can declare the same type on the same line using commas
+		x = 100;
+		y = 11;
+		z = 100;
+		//these operators are intuitive
+		System.out.println("x + y = " + (x+y));
+		System.out.println("x - y = " + (x-y));
+		System.out.println("x * y = " + (x*y));
+		System.out.println("y / x = " + (y/x));
+		//what about remainders
+		System.out.println("The remainder of 2/10 = " + (x%y));
+		System.out.println("y/x = " + (y/x) + " with a remainder of " + (y%x)); 
+		
+		//if, else if, else
+		/*if(x%2 == 0) {
+			System.out.println("x is even!");
+		}
+		else {
+			System.out.println("y is odd!");
+		}*/
+		String name = "Yuta"; //String name is an object, name is an instance to the String class
+		System.out.println(name.toUpperCase()); //non-static method
+		System.out.println("x " + evenOrNah(x));
+		System.out.println("y " + evenOrNah(y));
+		System.out.println("z " + evenOrNah(z));
+		System.out.println("100 " + evenOrNah(100));
+		
+		if(name.equals("Yuta")) {
+			System.out.println("same");
+		}//end of if
+		
+		for(int i = 0; i < 10; i++) {
+			if(evenOrNah(i).equals("is even!")) {
+				System.out.print(i + " ");
+			}//end of if
+		}//end of for loop
+		System.out.println();
+		
+		if(x == 1) {//checks this first
+			System.out.println("x is 1");
+		}//end of if
+		else if(x == 10) {//ONLY reached if the if statement is false
+			System.out.println("x is 10");
+		}
+		else if(x == 100) {//when you find the "true " one you'll stop
+			System.out.println("x is 100");
+		}
+		else {//if you never find a true statement, default to else
+			System.out.println("x is not 1, 10, or 100");
+		}//end of if 
 	}//end of the main method
+	
+	private static String evenOrNah(int number) {
+			if(number%2 ==0) 
+			return "is even!";
+			else return "is odd!";
+	}//end of the evenOrNah
 }//end of JavaLecture2 class
