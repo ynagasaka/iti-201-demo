@@ -8,7 +8,6 @@ public class JavaLecture2 {
 		//the third part tells Java how to iterate
 		//i++ means add 1 to i --> it is the same as saying:
 		//i = i + 1 or i += 1
-		//
 		for(int i = 0; i < myInts.length; i++) {
 			System.out.println(i);
 			myInts[i] = i;
@@ -93,6 +92,34 @@ public class JavaLecture2 {
 		else {//if you never find a true statement, default to else
 			System.out.println("x is not 1, 10, or 100");
 		}//end of if 
+		
+		//int x = 0;
+		String someString = "test";
+		boolean myBool;
+		boolean myOtherBool;
+		myBool = (someString.equals("test"));
+		myOtherBool = (x == 0);
+		if(myBool && myOtherBool) { //&& means AND
+									// || means OR
+			System.out.println("At least on of my booleans are true");
+		}//end of if
+		else {
+			System.out.println("Both of my booleans are false");
+		}//end of else
+		/*
+		 * x and y are both booleans
+		 *  x  &&  y --> result
+		 * true   true   true
+		 * true   false  false
+		 * false  true   false
+		 * false  false  false 
+		 * 
+		 *  x  ||  y --> result
+		 * true   true   true
+		 * true   false  true
+		 * false  true   true
+		 * false  false  false 
+		 */
 	}//end of the main method
 	
 	private static String evenOrNah(int number) {
